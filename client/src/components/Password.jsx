@@ -53,7 +53,7 @@ const Password = () => {
               <p>
                 Forgot Password ?&nbsp;
                 <span
-                  onClick={() => navigate('/register')}
+                  onClick={() => navigate('/recovery')}
                   className="text-red-500 cursor-pointer"
                 >
                   Recover now!!!

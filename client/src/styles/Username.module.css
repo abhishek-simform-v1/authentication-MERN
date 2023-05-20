@@ -2,25 +2,29 @@
   background-color: rgba(255, 255, 255, 0.55);
   border-radius: 16px;
   box-shadow: 0 4px 30px #4747470b;
-  min-height: 600px;
   backdrop-filter: blur(7.1px);
+  max-height: 700px;
   border: 1 px solid rgba(255, 255, 255, 0.3);
-  @apply border-4 border-gray-50 shrink-0 h-1 rounded-3xl py-20 px-7 min-w-max;
+  @apply border-4 border-gray-50 shrink-0 h-full rounded-3xl py-8 px-7 w-[405px];
 }
 .profile_img {
   @apply border-4 border-gray-100 w-[135px] rounded-full shadow-lg cursor-pointer;
   @apply hover:border-indigo-200 transition-all;
 }
 .textbox {
-  @apply border-0 px-5 py-4 rounded-xl w-3/4 shadow-sm text-lg;
+  @apply border-0 px-5 py-4 rounded-xl w-[100] shadow-sm text-lg;
   @apply focus:outline-none;
 }
 .btn {
   background-color: rgb(99, 102, 241) !important;
   @apply w-3/4 py-4 text-gray-200 text-lg shadow-sm text-center
     transition-all rounded-lg font-bold;
+  transition: all 0.3s !important;
 }
 
 .btn:hover {
   background-color: #ff6a6a !important;
+}
+input[type='file'] {
+  display: none;
 }
