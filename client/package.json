@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "formic": "^0.0.10",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.11.2"
   },
   "devDependencies": {

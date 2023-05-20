@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
+
+.n-button {
+  /* ... */
+}
 @tailwind utilities;
+* > * {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #dcdce6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./assets/loginPage.jpg');
+  @apply bg-center;
+}
