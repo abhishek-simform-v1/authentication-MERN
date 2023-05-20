@@ -15,6 +15,7 @@ const Username = () => {
     validateOnChange: false,
     onSubmit: async (values) => {
       console.log(values);
+      navigate('./password');
     },
   });
   const navigate = useNavigate();

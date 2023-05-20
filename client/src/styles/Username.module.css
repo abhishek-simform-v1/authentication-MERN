@@ -18,8 +18,9 @@
 .btn {
   background-color: rgb(99, 102, 241) !important;
   @apply w-3/4 py-4 text-gray-200 text-lg shadow-sm text-center
-      transition-all rounded-lg font-bold;
+    transition-all rounded-lg font-bold;
 }
+
 .btn:hover {
   background-color: #ff6a6a !important;
 }

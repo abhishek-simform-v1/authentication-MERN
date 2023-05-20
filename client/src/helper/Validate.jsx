@@ -5,6 +5,26 @@ export async function usernameValidate(values) {
   return errors;
 }
 
+/**validate password */
+export async function passwordValidate(values) {
+  const errors = passwordVerify({}, values);
+  return errors;
+}
+function passwordVerify(error = {}, values) {
+  var passValidate =
+    /^(?=.*[!@#$%^&*(),.?":{}|<>])(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
+  if (!values.password) {
+    error.password = toast.error('Password Required!');
+  } else if (values.password.includes(' ')) {
+    error.password = toast.error('Invalid Password');
+  } else if (values.password.length < 6) {
+    error.password = toast.error('Password must be at least 6 characters');
+  } else if (!passValidate.test(values.password)) {
+    error.password = toast.error('Password must have special characters');
+  }
+
+  return error;
+}
 /** validate username */
 
 function usernameVerify(error = {}, values) {
