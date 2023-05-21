@@ -11,7 +11,7 @@ const Recovery = () => {
         <div className={style.glass}>
           <div className="title flex justify-center items-center flex-col">
             <h4 className="text-5xl  font-bold">Recovery</h4>
-            <p className="py-4 text-xl w-2/3 text-center text-gray-950">
+            <p className="py-4 text-xl w-2/3 text-center  ">
               Enter OTP to recover Password
             </p>
           </div>
@@ -22,7 +22,7 @@ const Recovery = () => {
                 className={style.textbox}
                 placeholder="OTP"
               />
-              <span className=" text-sm text-center  text-gray-950">
+              <span className=" text-sm text-center   ">
                 Enter 6 digit OTP sent to your Email address
               </span>
               <button

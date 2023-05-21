@@ -25,7 +25,7 @@ const Password = () => {
         <div className={style.glass}>
           <div className="title flex justify-center items-center flex-col">
             <h4 className="text-5xl  font-bold">Hello Again!</h4>
-            <p className="py-4 text-xl w-2/3 text-center text-gray-950">
+            <p className="py-4 text-xl w-2/3 text-center">
               Explore more by connecting with us!
             </p>
           </div>

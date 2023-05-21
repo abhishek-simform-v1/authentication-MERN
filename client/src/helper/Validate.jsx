@@ -42,3 +42,29 @@ export async function resetPasswordValidate(values) {
   }
   return errors;
 }
+
+/** validate register Form */
+export async function registerValidation(values) {
+  const errors = usernameVerify({}, values);
+  emailVerify(errors, values);
+  passwordVerify(errors, values);
+}
+
+/**email verification function */
+function emailVerify(error = {}, values) {
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (!values.email) {
+    error.email = toast.error('Email Required..!');
+  } else if (values.email.includes(' ')) {
+    error.email = toast.error('Wrong Email..!');
+  } else if (emailRegex.test(values.email)) {
+    error.email = toast.error('Invalid Email address..!');
+  }
+  return error;
+}
+
+/**validate profile page */
+export async function profileValidation(values) {
+  const errors = emailVerify({}, values);
+  return errors;
+}
